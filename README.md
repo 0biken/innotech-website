@@ -21,7 +21,7 @@ From the project root:
 1. Install dependencies
 
 ```powershell
-cd "C:\Users\9jasolutionshub\Desktop\innotech-website\backend"
+cd "C:\Users\<Your-Username>\innotech-website\backend"
 npm install
 ```
 
