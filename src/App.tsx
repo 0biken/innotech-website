@@ -5,6 +5,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import Sponsor from "./sections/Sponsor";
 import OurImpact from "./sections/OurImpact";
+import About from "./sections/About";
+import OurSignatureTracks from "./sections/OurSignatureTracks";
 
 gsap.registerPlugin(ScrollTrigger);
 const App = () => {
@@ -16,6 +18,8 @@ const App = () => {
       </div>
       <Sponsor />
       <OurImpact />
+      <About />
+      <OurSignatureTracks />
     </div>
   );
 };

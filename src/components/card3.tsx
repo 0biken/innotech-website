@@ -17,9 +17,9 @@ const Card3 = () => {
             </p>
           </div>
 
-          <div className="flex-shrink-0 pr-4 pb-2">
+          <div className="flex-shrink-0 pr-4 pb-2 w-[50%]">
             <img
-              className="w-[300px]"
+              className="w-full"
               alt="Undraw dev"
               src="/images/laptop.svg "
             />
