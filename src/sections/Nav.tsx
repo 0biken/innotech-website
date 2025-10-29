@@ -22,12 +22,13 @@ const Nav = () => {
         width: "40%",
         duration: 100,
         ease: "back.in",
+        border: "1px solid black"
       }
     )
   })
 
   return (
-    <nav className="fixed top-2 left-1/2 -translate-x-1/2 z-50 px-8 py-2 bg-white backdrop-blur-md rounded-full border border-foreground/10">
+    <nav className="fixed top-2 left-1/2 -translate-x-1/2 z-50 px-8 py-2 bg-white backdrop-blur-md rounded-full ">
       <ul className="flex items-center gap-8 justify-between font-geist text-[25px]">
         <li><img src="/images/logo.svg" alt="" className="h-5"/></li>
         {navLinks.map((link) => (
