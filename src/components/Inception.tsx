@@ -3,7 +3,7 @@ const Inception = () => {
     <section className="w-full p-[1%]">
       <div className="relative">
         <img src="/images/about.svg" alt="" />
-          <p className="absolute top-[25%] left-[5%]  font-geist font-normal text-white text-2xl tracking-[0] leading-[normal] ">
+          <p className="absolute top-[25%] left-[3%] right-[5%] font-geist font-normal text-white text-2xl tracking-[0] leading-[normal] ">
             Since its inception, innotech has been a catalyst for student-led
             innovation. The 4.0 Edition brings together undergraduates, mentors and
             investors for hands-on learning, hackathons, and acceleration programs
