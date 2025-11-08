@@ -1,12 +1,9 @@
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap/all";
+
 import Card3 from "../components/card3";
 import Card1 from "../components/card1";
 import Card2 from "../components/Card2";
 import Card4 from "../components/Card4";
-// {
-//                 opacity:0, duration:1, ease: "power1.inOut", stagger:0.04
-//             }
+
 const OurImpact = () => {
   return (
     <div className="overflow-hidden">
