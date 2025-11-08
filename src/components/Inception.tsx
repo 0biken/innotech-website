@@ -11,12 +11,12 @@ const Inception = () => {
             workshops, and exhibitions, we help student innovators build products
             that solve real-world challenges.
           </p>
-          <button className="absolute bottom-1 left-[4%] cursor-pointer max-w-[230px]">
+          <a href="/register" className="absolute bottom-1 left-[4%] cursor-pointer max-w-[230px]">
             <img src="/images/recgr.svg" alt="" className="" />
             <p className="absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] font-geist text-xl font-[500] text-white">
               Register
             </p>
-          </button>
+          </a>
       </div>
     </section>
   );

@@ -7,20 +7,30 @@ import Sponsor from "./sections/Sponsor";
 import OurImpact from "./sections/OurImpact";
 import About from "./sections/About";
 import OurSignatureTracks from "./sections/OurSignatureTracks";
+import { Routes, Route } from "react-router-dom";
+import Register from "./pages/Register";
 
 gsap.registerPlugin(ScrollTrigger);
 const App = () => {
   return (
-    <div>
-      <div className="p-3 overflow-hidden">
-        <Nav />
-        <Hero />
-      </div>
-      <Sponsor />
-      <OurImpact />
-      <About />
-      <OurSignatureTracks />
-    </div>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <div>
+            <div className="p-3 overflow-hidden">
+              <Nav />
+              <Hero />
+            </div>
+            <Sponsor />
+            <OurImpact />
+            <About />
+            <OurSignatureTracks />
+          </div>
+        }
+      />
+      <Route path="/register" element={<Register />} />
+    </Routes>
   );
 };
 
