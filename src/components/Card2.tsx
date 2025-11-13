@@ -1,9 +1,11 @@
+import CountUp from "./CountUp";
+
 const Card2 = () => {
   return (
     <div className="flex flex-col rounded-[20px] bg-[#0070604D] pt-[3%] pl-[3%] justify-center items-center w-full">
       <div className="flex-1 flex flex-col gap-1">
         <h2 className="font-orbitron font-extrabold text-black text-[30px] tracking-[0] leading-[normal]">
-          1,000+ students trained
+           <CountUp end={1000} suffix="+ students trained" />
         </h2>
 
         <p className="font-geist font-normal text-black text-2xl tracking-[0] leading-[normal]">

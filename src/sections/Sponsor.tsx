@@ -62,7 +62,7 @@ const Sponsor = () => {
   return (
     <div className="pb-12 overflow-hidden">
       <h1 className="text-[40px] text-black font-orbitron font-[600] text-center pb-12">
-        Sponsored by
+        Our Partners
       </h1>
       <div className="flex items-center justify-center gap-0" ref={marqueeRef}>
         {sponsorLogos.map((logo, index) => (
