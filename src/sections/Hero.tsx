@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative xl:h-screen w-full overflow-hidden flex justify-center rounded-2xl px-[10%] py-[7%]">
+    <section className="relative lg:h-screen w-full overflow-hidden flex justify-center rounded-2xl px-[10%] py-[7%]">
       <div className="absolute inset-0 w-full">
         <img 
           src="/images/hero.png" 
