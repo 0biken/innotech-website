@@ -4,7 +4,7 @@ const About = () => {
       <h1 className="text-3xl text-black font-orbitron font-[600] text-center pb-9">
         About Innotech
       </h1>
-      <section className="flex px-[10%] gap-[10%]">
+      <section className="flex px-[5%] gap-[10%]">
         <div className="font-geist w-[50%] flex flex-col gap-5 pr-10">
           <h1 className="text-3xl">Empowering Innovation And Impact</h1>
           <p className="text-xl">
