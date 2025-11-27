@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap/all";
 
@@ -35,7 +35,13 @@ const OurSignatureTracks = () => {
     setCurrentIndex(newIndex)
   }
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
+    }, 4000);
 
+    return () => clearInterval(interval);
+  }, [totalSlides]);
 
   useGSAP(() => {
     gsap.fromTo("#title", { opacity:0}, { opacity:1, duration:1, ease:"expo.out"});
@@ -45,7 +51,7 @@ const OurSignatureTracks = () => {
   },[currentIndex]);
   
   return (
-    <section>
+    <section className="pb-30">
       <h1 className="text-3xl text-black font-orbitron font-[600] text-center">
         Our Signature Tracks
       </h1>
@@ -59,9 +65,9 @@ const OurSignatureTracks = () => {
           <p className="font-geist font-normal text-2xl description">
             {tracks[currentIndex].description}
           </p>
-          <div className={`relative  cursor-pointer but ${currentIndex==2 ? "max-w-[400px]": "max-w-[140px]"}`}>
+          <div className={`relative  cursor-pointer but ${currentIndex==2 ? "max-w-[280px]": "max-w-[140px]"}`}>
             <img src={`${tracks[currentIndex].img}`} alt="" />
-            <p className="font-geist font-normal text-3xl absolute text-white  top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]">{tracks[currentIndex].button}</p>
+            <p className={`font-geist font-normal  ${currentIndex==2 ? "text-[27px] left-[30%] translate-x-[-20%]": "text-3xl left-[50%] translate-x-[-50%]"}  absolute text-white text-left  top-[50%] translate-y-[-50%] `}>{tracks[currentIndex].button}</p>
           </div>
 
           <ul className="flex max-w-[260px] gap-[10px] items-center">
@@ -73,7 +79,7 @@ const OurSignatureTracks = () => {
           </ul>
         </section>
         <section className="max-w-[50%] main">
-          <img src={tracks[currentIndex].main} alt="" />
+          <img className="max-w-[470px] max-h-[365px]" src={tracks[currentIndex].main} alt="" />
         </section>
       </div>
     </section>
